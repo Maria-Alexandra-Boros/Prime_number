@@ -23,7 +23,6 @@ namespace Prime_number
         {
             
 
-            /// MessageBox.Show("S-a introdus " + numberTextBox.Text);
             bool isNumber = Int32.TryParse(numberTextBox.Text, out result);
             if (isNumber)
             { 
