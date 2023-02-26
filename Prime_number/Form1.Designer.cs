@@ -95,7 +95,7 @@ namespace Prime_number
             this.celMaiMareNrNeprim.Name = "celMaiMareNrNeprim";
             this.celMaiMareNrNeprim.Size = new System.Drawing.Size(406, 23);
             this.celMaiMareNrNeprim.TabIndex = 5;
-            this.celMaiMareNrNeprim.Text = "Cel mai mare numar neprim inseart: 0";
+            this.celMaiMareNrNeprim.Text = "Cel mai mare numar neprim inserat: 0";
             // 
             // celMaiMareNrInserat
             // 
