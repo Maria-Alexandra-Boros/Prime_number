@@ -33,14 +33,16 @@ namespace Prime_number
             this.numberTextBox = new System.Windows.Forms.TextBox();
             this.numerePrimeCounter = new System.Windows.Forms.Label();
             this.numereNeprimeCounter = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.celMaiMareNrPrim = new System.Windows.Forms.Label();
+            this.celMaiMareNrNeprim = new System.Windows.Forms.Label();
+            this.celMaiMareNrInserat = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Button
             // 
             this.Button.BackColor = System.Drawing.Color.LightSalmon;
             this.Button.Font = new System.Drawing.Font("Consolas", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button.Location = new System.Drawing.Point(210, 184);
+            this.Button.Location = new System.Drawing.Point(210, 228);
             this.Button.Name = "Button";
             this.Button.Size = new System.Drawing.Size(124, 43);
             this.Button.TabIndex = 0;
@@ -50,7 +52,7 @@ namespace Prime_number
             // 
             // numberTextBox
             // 
-            this.numberTextBox.Location = new System.Drawing.Point(210, 158);
+            this.numberTextBox.Location = new System.Drawing.Point(210, 192);
             this.numberTextBox.Name = "numberTextBox";
             this.numberTextBox.Size = new System.Drawing.Size(124, 20);
             this.numberTextBox.TabIndex = 1;
@@ -75,14 +77,35 @@ namespace Prime_number
             this.numereNeprimeCounter.TabIndex = 3;
             this.numereNeprimeCounter.Text = "Numere neprime inserate: 0";
             // 
-            // label1
+            // celMaiMareNrPrim
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 99);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "label1";
+            this.celMaiMareNrPrim.AutoSize = true;
+            this.celMaiMareNrPrim.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.celMaiMareNrPrim.Location = new System.Drawing.Point(12, 110);
+            this.celMaiMareNrPrim.Name = "celMaiMareNrPrim";
+            this.celMaiMareNrPrim.Size = new System.Drawing.Size(384, 23);
+            this.celMaiMareNrPrim.TabIndex = 4;
+            this.celMaiMareNrPrim.Text = "Cel mai mare numar prim inserat: 0";
+            // 
+            // celMaiMareNrNeprim
+            // 
+            this.celMaiMareNrNeprim.AutoSize = true;
+            this.celMaiMareNrNeprim.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.celMaiMareNrNeprim.Location = new System.Drawing.Point(12, 133);
+            this.celMaiMareNrNeprim.Name = "celMaiMareNrNeprim";
+            this.celMaiMareNrNeprim.Size = new System.Drawing.Size(406, 23);
+            this.celMaiMareNrNeprim.TabIndex = 5;
+            this.celMaiMareNrNeprim.Text = "Cel mai mare numar neprim inseart: 0";
+            // 
+            // celMaiMareNrInserat
+            // 
+            this.celMaiMareNrInserat.AutoSize = true;
+            this.celMaiMareNrInserat.Font = new System.Drawing.Font("Consolas", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.celMaiMareNrInserat.Location = new System.Drawing.Point(12, 87);
+            this.celMaiMareNrInserat.Name = "celMaiMareNrInserat";
+            this.celMaiMareNrInserat.Size = new System.Drawing.Size(329, 23);
+            this.celMaiMareNrInserat.TabIndex = 6;
+            this.celMaiMareNrInserat.Text = "Cel mai mare numar inserat: 0";
             // 
             // Prime_number
             // 
@@ -90,7 +113,9 @@ namespace Prime_number
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(516, 385);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.celMaiMareNrInserat);
+            this.Controls.Add(this.celMaiMareNrNeprim);
+            this.Controls.Add(this.celMaiMareNrPrim);
             this.Controls.Add(this.numereNeprimeCounter);
             this.Controls.Add(this.numerePrimeCounter);
             this.Controls.Add(this.numberTextBox);
@@ -108,7 +133,9 @@ namespace Prime_number
         private System.Windows.Forms.TextBox numberTextBox;
         private System.Windows.Forms.Label numerePrimeCounter;
         private System.Windows.Forms.Label numereNeprimeCounter;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label celMaiMareNrPrim;
+        private System.Windows.Forms.Label celMaiMareNrNeprim;
+        private System.Windows.Forms.Label celMaiMareNrInserat;
     }
 }
 
