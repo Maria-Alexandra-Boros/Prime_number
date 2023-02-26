@@ -44,15 +44,6 @@ namespace Prime_number
                 {
                     if (result % i == 0)
                         isPrime = false;
-                    if(result>maxNeprim)
-                    {
-                        maxNeprim = result;
-                        celMaiMareNrNeprim.Text = "Cel mai mare numar neprim inserat: " + maxNeprim;
-                    }
-                    else
-                    {
-                        celMaiMareNrNeprim.Text = "Cel mai mare numar neprim inserat: " + maxNeprim;
-                    }
                 }
                 if (isPrime == true)
                 {
@@ -74,6 +65,15 @@ namespace Prime_number
                     this.BackColor = Color.Salmon;
                     nrNeprim++;
                     numereNeprimeCounter.Text = "Numere neprime introduse: " + nrNeprim;
+                    if (result > maxNeprim)
+                    {
+                        maxNeprim = result;
+                        celMaiMareNrNeprim.Text = "Cel mai mare numar neprim inserat: " + maxNeprim;
+                    }
+                    else
+                    {
+                        celMaiMareNrNeprim.Text = "Cel mai mare numar neprim inserat: " + maxNeprim;
+                    }
                 }
 
             }
